@@ -12,7 +12,10 @@
         <h1> Viikkotehtava 1 </h1>
 
     </div>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/g2123_LocalDBDemo.aspx">Leffat</asp:HyperLink>
+    <div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/g2123_LocalDBDemo.aspx">Leffat</asp:HyperLink> <br />
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/g2123_Page.aspx">Etusivu</asp:HyperLink>
+    </div>
     </form>
 </body>
 </html>
