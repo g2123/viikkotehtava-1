@@ -11,6 +11,23 @@ public partial class g2123_valuuttamuunnin : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        //Parametrillinen
+        if (Request.QueryString["value"] != null)
+        {
+            txtName.Text = Request.QueryString["value"].ToString();
+        }
+
+        //Sessio
+        if (Session["value"] != null)
+        {
+            txtName.Text = (string)Session["value"];
+            Session.Remove("value");
+        }
+
+        if (Request.Cookies["nimi"] != null)
+        {          
+            txtName.Text = Request.Cookies["nimi"].Value; 
+        }
 
     }
     protected void btnMuunna_Click(object sender, EventArgs e)

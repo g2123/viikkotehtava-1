@@ -8,16 +8,17 @@
     </div>
     <div>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/g2123_LocalDBDemo.aspx">Leffat</asp:HyperLink> <br />
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/g2123_Page.aspx">Kalenteri</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/g2123_Page.aspx">Kalenteri</asp:HyperLink> <br />
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/g2123_valuuttamuunnin.aspx">Valuuttamuunnin</asp:HyperLink>
     </div>
     <div>
         <h1>VIIKKOTEHTÄVÄT 1 JA 2 </h1>
     </div>
     <div>
-        <asp:TextBox ID="textbox1" runat="server" Text="kirjoita nimesi"></asp:TextBox>
-        <asp:Button ID="btn1" runat="server" Text="Välitä parametreinä" />
-        <asp:Button ID="btn2" runat="server" Text="Tallenna sessio" />
-        <asp:Button ID="Btn3" runat="server" Text="Tallenna Cookie" />
+        <asp:TextBox ID="txtbox1" runat="server" Text="kirjoita nimesi"></asp:TextBox>
+        <asp:Button ID="btn1" runat="server" Text="Välitä parametreinä" OnClick="btn1_Click" />
+        <asp:Button ID="btn2" runat="server" Text="Tallenna sessio" OnClick="btn2_Click" />
+        <asp:Button ID="Btn3" runat="server" Text="Tallenna Cookie" OnClick="Btn3_Click" />
     </div>
 </asp:Content>
 
