@@ -26,6 +26,7 @@ public partial class g2123_indexMP : System.Web.UI.Page
     {
         Session["value"] = txtbox1.Text;
         Response.Redirect("g2123_valuuttamuunnin.aspx");
+
     }
     protected void Btn3_Click(object sender, EventArgs e)
     {

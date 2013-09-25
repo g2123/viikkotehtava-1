@@ -21,7 +21,6 @@ public partial class g2123_valuuttamuunnin : System.Web.UI.Page
         if (Session["value"] != null)
         {
             txtName.Text = (string)Session["value"];
-            Session.Remove("value");
         }
 
         if (Request.Cookies["nimi"] != null)
