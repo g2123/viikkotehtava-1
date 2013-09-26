@@ -23,6 +23,12 @@
     <div>
         <h1>Kotitehtävä 2</h1>
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/g2123_elakelaskuri.aspx">Eläkelaskuri</asp:HyperLink>
+        <h1>Tuntitehtävät vk 39</h1>
+        <asp:HyperLink ID="hyperLink5" runat="server" NavigateUrl="~/g2123_SimpleSqlDataSource.aspx">DataBindit</asp:HyperLink> <br />
+        <asp:HyperLink ID="hyperLink6" runat="server" NavigateUrl="~/g2123_SimpleSqlDataSource2.aspx">DataBindit for single data</asp:HyperLink> <br />
+        <asp:HyperLink ID="hyperLink7" runat="server" NavigateUrl="~/g2123_XMLData.aspx">XML dataGrid</asp:HyperLink>
+
+
     </div>
 </asp:Content>
 
