@@ -1,13 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="g2123_LocalDBDemo.aspx.cs" Inherits="g2123_LocalDBDemo" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="g2123_LocalDBDemo.aspx.cs" Inherits="g2123_LocalDBDemo" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Paikalliset videot</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+
     <div>
         <h1> Leffoja (oliokokoelma) </h1>
         <asp:Button ID="btnGetMovies" runat="server" Text="Hae elokuvat (oliokokoelma)" OnClick="btnGetMovies_Click" />
@@ -17,6 +14,6 @@
             </ItemTemplate>
         </asp:DataList>
     </div>
-    </form>
-</body>
-</html>
+
+
+</asp:Content>

@@ -5,27 +5,243 @@
 
 #pohja {
     background-image: url(images/tausta1.jpg);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center; 
     padding-top: 20px;
     margin-bottom: 40px;
 }
 
+div {
+    padding: 5px;
+}
+
+h1 {
+    text-transform:uppercase;
+    font-family:helvetica;
+}
+
 #keskidiv {
-    background-color:snow;
-    width:70%;
+    background-color: #EBEBEB;
+    width: 60%;
     margin: auto;
-    border-top-left-radius:25px;
-    border-top-right-radius:25px;
-    border-bottom-left-radius:15px;
-    border-bottom-right-radius:15px;
     margin-left:auto;
+    padding: 0;
+    text-decoration:none;
+    -moz-box-shadow: 0 0 5px 5px #fafafa;
+    -webkit-box-shadow: 0 0 5px 5px #fafafa;
+    box-shadow: 0 0 0 0  #fafafa;
+}
+
+    #keskidiv a
+    {
+        text-decoration: none;
+        color: black;
+        font: bold 16px/10px Arial, Helvetica;
+    }
+
+        #keskidiv a:hover
+        {
+            color:#989696;
+        }
+
+#alatunniste
+{
+    background:#737373;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    height: 20px;
+    text-align: center;
+}
+
+#divlogo
+{
+    width: 59.9%;
+    margin: auto;
 }
 
 #logo {
     width: 100%;
     height: auto;
     max-width: 100%;
-    border: 2px;
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
+    border: solid 1px;
+    border-color: #444;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+}
+
+#menu
+{
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0 0 0;
+    list-style: none;  
+    background: #111;
+    background: -moz-linear-gradient(#444, #111); 
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));    
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-box-shadow: 0 2px 1px #9c9c9c;
+    -webkit-box-shadow: 0 2px 1px #9c9c9c;
+    box-shadow: 0 2px 1px #9c9c9c;
+    text-align: center;
+}
+
+#menu li
+{
+    padding: 0 0 10px 0;
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    *display: inline;    
+    zoom: 1;
+}
+
+#menu a 
+{
+    display: inline-block;
+    *display: inline;    
+    zoom: 1;
+    height: 25px;
+    padding: 0 25px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a
+{
+    color: #fafafa;
+}
+
+#menu li:hover > ul
+{
+    display: block;
+}
+
+/* Sub-menu */
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);    
+    background: -ms-linear-gradient(#444, #111);    
+    background: linear-gradient(#444, #111);
+    -moz-box-shadow: 0 0 2px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 2px rgba(255,255,255,.5);
+    box-shadow: 0 0 2px rgba(255,255,255,.5);    
+    text-align: left;
+}
+
+#menu ul ul
+{
+  top: 0;
+  left: 150px;
+}
+
+#menu ul li
+{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child
+{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a
+{    
+    padding: 10px;
+    height: 10px;
+    width: 130px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover
+{
+    background: #0186ba;
+    background: -moz-linear-gradient(#dcdcdc,  #9c9c9c);    
+    background: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#9c9c9c));
+    background: -webkit-linear-gradient(#dcdcdc,  #9c9c9c);
+    background: -o-linear-gradient(#dcdcdc,  #9c9c9c);
+    background: -ms-linear-gradient(#dcdcdc,  #9c9c9c);
+    background: linear-gradient(#dcdcdc,  #9c9c9c);
+}
+
+
+#menu ul li:first-child > a:after
+{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul ul li:first-child a:after
+{
+    left: -8px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-left: 0;    
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #dcdcdc; 
+}
+
+#menu ul ul li:first-child a:hover:after
+{
+    border-right-color: #dcdcdc;
+    border-bottom-color: transparent;     
+}
+
+/* Clear floated elements */
+#menu:after 
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }

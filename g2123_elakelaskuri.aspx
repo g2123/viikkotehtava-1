@@ -1,19 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="g2123_elakelaskuri.aspx.cs" Inherits="g2123_elakelaskuri" %>
-
-<script>
+﻿<%@ Page Language="C#"  MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="g2123_elakelaskuri.aspx.cs" Inherits="g2123_elakelaskuri" %>
 
 
-</script>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-
-    <title></title>
-</head>
-<body style="background-color:lightgoldenrodyellow";>
-    <form id="form1" runat="server">
     <div>
         <h1>Eläkelaskuri</h1>
     </div>
@@ -42,6 +33,4 @@
              </td>
          </tr>         
      </div> 
-    </form>
-</body>
-</html>
+    </asp:Content>

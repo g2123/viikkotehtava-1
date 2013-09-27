@@ -1,13 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="g2123_SimpleSqlDataSource2.aspx.cs" Inherits="g2123_SimpleSqlDataSource2" %>
+﻿<%@ Page Language="C#"  MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="g2123_SimpleSqlDataSource2.aspx.cs" Inherits="g2123_SimpleSqlDataSource2" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
         <asp:SqlDataSource ID="srcMovies" ConnectionString="Data Source=eight.labranet.jamk.fi;Initial Catalog=movie;Persist Security Info=True;User ID=koodari;Password=koodari13"
         SelectCommand="SELECT title, director, year FROM Movies" runat="server" ></asp:SqlDataSource>
@@ -28,6 +24,5 @@
 
 
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

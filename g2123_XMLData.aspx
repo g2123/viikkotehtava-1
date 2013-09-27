@@ -1,13 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="g2123_XMLData.aspx.cs" Inherits="XMLData" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="g2123_XMLData.aspx.cs" Inherits="XMLData" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
         <asp:XmlDataSource ID="xmldatasource" runat="server" DataFile="~/App_Data/Records2.xml" />
         <asp:GridView ID="dataGrid" runat="server" DataSourceID="xmldatasource" />
@@ -23,6 +19,5 @@
         </asp:GridView>
 
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

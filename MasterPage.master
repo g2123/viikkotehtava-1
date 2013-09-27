@@ -12,10 +12,37 @@
 </head>
 <body id="pohja">
     <form id="form1" runat="server">
-    <div>
+        <div id="divlogo">
+            
+            <a href="g2123_indexMP.aspx" target="_parent" >
+                <img src="images/logo.jpg" id="logo" />
+            </a>
+
+        </div>
+
+        <div>
+        <div id="keskidiv">
+
+        <ul id="menu">
+             <li><a href="g2123_indexMP.aspx"> Home </a> </li>
+             <li>
+                     <a href="g2123_work.aspx">assignments</a>
+                     <ul>
+                         <li><a href="g2123_examples.aspx">Examples</a></li>
+                         <li><a href="g2123_homeworks.aspx">Homework</a></li>
+                     </ul>
+                
+             </li>
+             <li> <a href="g2123_puunakyma.aspx">Treeview</a></li>
+             <li><a href="g2123_about.aspx">About</a></li>
+         </ul>
+
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
         </asp:ContentPlaceHolder>
+            <div id="alatunniste">
+                Sere Kymäläinen G2123
+            </div>
+    </div>
     </div>
     </form>
 </body>
