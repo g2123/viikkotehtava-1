@@ -7,11 +7,12 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
 </head>
-<body>
+<body id="pohja">
     <form id="form1" runat="server">
     <div>
-        <img src="images/Logo.jpg" />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

@@ -3,6 +3,30 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+   
+
+   <div id="keskidiv"> 
+     <a href="g2123_indexMP.aspx">
+     <img src="images/Logo.jpg" id="logo" />
+         
+    
+     <asp:Menu ID="menu1" runat="server" StaticDisplayLevels="3" DisappearAfter="50" Font-Names="Arial" Target="blank">
+        <StaticMenuItemStyle backcolor="LightSteelBlue"
+          forecolor="Black"/>
+        <StaticHoverStyle backcolor="LightSkyBlue"/>
+        <dynamicmenuitemstyle backcolor="Black"
+          forecolor="Silver"/>
+        <dynamichoverstyle backcolor="LightSkyBlue"
+          forecolor="Black"/>
+
+        <Items>
+            <asp:MenuItem Text="Home" Value="Home">
+                <asp:MenuItem text="new" value="new" />
+                <asp:MenuItem Text="Open" Value="Open" />
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu>
+
     <div>
         <h1>Tuntitehtävät vk 38</h1>
     </div>
@@ -29,6 +53,7 @@
         <asp:HyperLink ID="hyperLink7" runat="server" NavigateUrl="~/g2123_XMLData.aspx">XML dataGrid</asp:HyperLink>
 
 
+    </div>
     </div>
 </asp:Content>
 
