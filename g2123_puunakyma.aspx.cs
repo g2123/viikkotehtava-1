@@ -9,6 +9,7 @@ public partial class g2123_puunakyma : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        DataSource.XPath = "/catalog";
+        PageTreeView.DataBind();
     }
 }

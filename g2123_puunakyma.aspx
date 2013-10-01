@@ -5,11 +5,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <div>
-        <asp:XmlDataSource ID="xmldatasource" runat="server" DataFile="~/App_Data/Records2.xml" />
-        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="xmldatasource"></asp:TreeView>
-
-        <asp:XmlDataSource ID="xmldatasource1" runat="server" DataFile="~/App_Data/Records.xml" TransformFile="~/App_Data/Records.xsl" XPath="/catalog/record" />
-        <asp:TreeView ID="GridView1" runat="server" DataSourceID="xmldatasource1" AutoGenerateColumns="False" >
+        <asp:XmlDataSource ID="DataSource" runat="server" XPath="catalog" DataFile="~/App_Data/Records.xml" />
+        <asp:TreeView ID="PageTreeView" runat="server" DataSourceID="DataSource">
+            <DataBindings>
+                <asp:TreeNodeBinding DataMember="title" TextField="#InnerText" />
+                <asp:TreeNodeBinding DataMember="artist" TextField="#InnerText" />
+                <asp:TreeNodeBinding DataMember="country" TextField="#InnerText" />
+                <asp:TreeNodeBinding DataMember="year" TextField="#InnerText" />
+            </DataBindings>
         </asp:TreeView>
     </div>
 
