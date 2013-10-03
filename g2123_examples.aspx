@@ -21,6 +21,14 @@
             <asp:HyperLink ID="hyperLink6" runat="server" NavigateUrl="~/g2123_SimpleSqlDataSource2.aspx">DataBindit for single data</asp:HyperLink> <br />
             <asp:HyperLink ID="hyperLink7" runat="server" NavigateUrl="~/g2123_XMLData.aspx">XML dataGrid</asp:HyperLink>
         </div>
+
+        
+            <h1>Vk 40</h1>
+
+        <div>
+            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/g2123_RRSFeeds.aspx">RSS Feed</asp:HyperLink> <br />
+            <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/g2123_FinnkinoMovies.aspx">Finnkino</asp:HyperLink>
+        </div>
     </div>
 </asp:Content>
 
