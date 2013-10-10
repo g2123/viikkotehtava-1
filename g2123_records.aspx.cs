@@ -14,7 +14,7 @@ public partial class records : System.Web.UI.Page
     }
     protected void btnRecords_Click(object sender, EventArgs e)
     {
-        //haetaan levytiedot dataTableen vai DataSerriin
+        //haetaan levytiedot dataTableen vai DataSettiin
         DataSet ds = new DataSet();
         DataTable dt = new DataTable();
         ds.ReadXml(MapPath("~/App_Data/Records2.xml"));

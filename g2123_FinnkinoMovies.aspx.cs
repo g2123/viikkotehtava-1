@@ -22,11 +22,12 @@ public partial class g2123_FinnkinoMovies : System.Web.UI.Page
     {
         string theatreShows = urlToMovies + myListBox.SelectedItem.Value;
         myDataSource.DataFile = theatreShows;
+        myRepeater.DataSource = myDataSource;
         myRepeater.DataBind();
     }
     protected void btnGetTheatres_Click(object sender, EventArgs e)
     {
-        //haetaan finnkinon teatterit listboksiin
+        //haetaan FinnKinon teatterit listboxiin
         XmlDocument doc = new XmlDocument();
         doc.Load(urlToTheatres);
         XmlNodeList nodes = doc.DocumentElement.SelectNodes("TheatreArea");
@@ -35,7 +36,5 @@ public partial class g2123_FinnkinoMovies : System.Web.UI.Page
             ListItem li = new ListItem(node["Name"].InnerText, node["ID"].InnerText);
             myListBox.Items.Add(li);
         }
-
-
     }
 }

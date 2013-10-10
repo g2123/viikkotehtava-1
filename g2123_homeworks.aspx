@@ -15,5 +15,10 @@
     <div>
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/g2123_elakelaskuri.aspx">Eläkelaskuri</asp:HyperLink>
     </div>
+    <h1>Tehtävä 3</h1>
+    <div>
+        <asp:HyperLink ID="hyperLink5" runat="server" NavigateUrl="~/g2123_palaute.aspx">Palaute</asp:HyperLink>
+    </div>
+
 </asp:Content>
 
