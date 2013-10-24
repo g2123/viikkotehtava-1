@@ -29,6 +29,11 @@
             <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/g2123_RRSFeeds.aspx">RSS Feed</asp:HyperLink> <br />
             <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/g2123_FinnkinoMovies.aspx">Finnkino</asp:HyperLink>
         </div>
+
+        <h1>vk 43</h1>
+        <div>
+            <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/g2123_MyRegEx.aspx">Validatioo</asp:HyperLink>
+        </div>
     </div>
 </asp:Content>
 
