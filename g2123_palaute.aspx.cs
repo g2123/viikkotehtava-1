@@ -42,12 +42,19 @@ public partial class g2123_palaute : System.Web.UI.Page
             new XElement("opittu", txtOlenOppinut.Text),
             new XElement("haluanoppia", txtHaluanOppia.Text),
             new XElement("hyvaa", txtHyvaa.Text),
-            new XElement("parannettavaa", txtParennettavaa.Text),
+            new XElement("parannettavaa", txtParannettavaa.Text),
             new XElement("muuta", txtMuuta.Text)
             ));
 
         doc.Save(file);
 
+        txtPvm.Text = "";
+        txtNimi.Text = "";
+        txtOlenOppinut.Text = "";
+        txtHaluanOppia.Text = "";
+        txtHyvaa.Text = "";
+        txtMuuta.Text = "";
+        txtParannettavaa.Text = "";
     }
 
     

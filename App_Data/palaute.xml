@@ -19,12 +19,16 @@
     <muuta>blaah blaah</muuta>
   </palaute>
   <palaute>
-    <pvm>asf</pvm>
-    <tekija>asd</tekija>
-    <opittu>asd</opittu>
-    <haluanoppia>asd</haluanoppia>
-    <hyvaa>asd</hyvaa>
-    <parannettavaa>as</parannettavaa>
-    <muuta>asd</muuta>
+    <pvm>10.10.13</pvm>
+    <tekija>Sere Kymäläinen</tekija>
+    <opittu>Käyttämään C#, ASP, HTML ja CSS sekasin. 
+
+Tuttuja asioita joita opin C#, niin osaan käyttää niitä webin puolella. </opittu>
+    <haluanoppia>Eiköhän tuossa tarvittavat perusasiat ole opintojakson suunnitelmassa.</haluanoppia>
+    <hyvaa>Erittäin hyvää ja selkeää opetusta. 
+
+Hyvä asia että kaikki ohjelmoidaan yhdessä ja kerrotaan koko ajan mitä mistäkin tapahtuu.</hyvaa>
+    <parannettavaa>Gitin kanssa outoja ongelmia..</parannettavaa>
+    <muuta></muuta>
   </palaute>
 </palautteet>

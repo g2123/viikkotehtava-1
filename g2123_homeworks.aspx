@@ -19,6 +19,10 @@
     <div>
         <asp:HyperLink ID="hyperLink5" runat="server" NavigateUrl="~/g2123_palaute.aspx">Palaute</asp:HyperLink>
     </div>
+    <h1>Tehtävä 4</h1>
+    <div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/g2123_wanhatAutot.aspx">Wanhat autot</asp:HyperLink>
+    </div>
 
 </asp:Content>
 

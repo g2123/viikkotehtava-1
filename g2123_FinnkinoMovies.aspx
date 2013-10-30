@@ -8,6 +8,7 @@
         rows="18" OnSelectedIndexChanged="myListBox_SelectedIndexChanged"
         AutoPostBack="true" />
     <asp:XmlDataSource ID="myDataSource" runat="server" XPath="Schedule/Shows/Show" />
+
     <asp:Repeater ID="myRepeater" runat="server" >
         <ItemTemplate>
             <!-- elokuvan nimi -->
